@@ -1,0 +1,220 @@
+/* RESET E FONTE DELICADA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* FUNDO ROSA QUARTZO SUTIL COM BRILHO */
+body {
+  background: linear-gradient(180deg, #fff7f9 0%, #fbebed 100%);
+  color: #4a3e3f;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.linktree-container {
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.profile {
+  margin-bottom: 32px;
+}
+
+/* FOTO COM BORDA GLOW */
+.avatar {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: 0 8px 24px rgba(234, 182, 188, 0.4);
+  /* Sombra rosa suave */
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.profile h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3a2d2e;
+  letter-spacing: -0.3px;
+  margin-bottom: 6px;
+}
+
+.profile p {
+  font-size: 0.9rem;
+  color: #8c7678;
+  font-weight: 400;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+/* BOTÕES ESTILO GLAMOUR MINIMALISTA */
+.link-btn {
+  background: #ffffff;
+  border: 1px solid #f3e1e3;
+  color: #4a3e3f;
+  padding: 16px 20px;
+  border-radius: 50px;
+  /* Estilo pílula super elegante */
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(234, 182, 188, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* EFEITO AO PASSAR O MOUSE / CLICAR */
+.link-btn:hover {
+  background: #fbf0f2;
+  border-color: #eab6bc;
+  color: #aa6b73;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(234, 182, 188, 0.25);
+}
+
+/* DESTAQUE PREMIUM PARA O BOTÃO DE AGENDAMENTO */
+.link-btn.destaque {
+  background: linear-gradient(135deg, #eab6bc 0%, #df99a2 100%);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(223, 153, 162, 0.3);
+}
+
+.link-btn.destaque:hover {
+  background: linear-gradient(135deg, #df99a2 0%, #d27f8a 100%);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(223, 153, 162, 0.45);
+}
+
+/* RODAPÉ */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-icons a {
+  color: #bfa1a4;
+  font-size: 1.4rem;
+  transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: #df99a2;
+}
+/* -------------------------------------------------------------
+   ESTILIZAÇÃO DOS BOTÕES DO SERENA BEAUTY LAB
+------------------------------------------------------------- */
+
+/* Estilo Base para todos os Botões */
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;                  /* Espaço perfeito entre o ícone e o texto */
+
+    background-color: #ffffff;  /* Fundo do botão (Clean/Limpo) */
+    color: #2c2c2c;             /* Cor do texto escura e elegante */
+    text-decoration: none;      /* ❌ REMOVE O SUBLINHADO FEIO */
+
+    padding: 16px 24px;         /* Botão mais robusto e fácil de clicar */
+    margin-bottom: 16px;        /* Afastamento entre os botões */
+    border-radius: 50px;        /* Bordas totalmente arredondadas e modernas */
+
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    font-weight: 600;           /* Texto levemente em negrito */
+    letter-spacing: 0.5px;      /* Espaçamento elegante entre as letras */
+
+    border: 1px solid #e0e0e0;  /* Borda fina e discreta */
+    transition: all 0.3s ease;  /* Deixa o efeito de passar o mouse suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02); /* Sombra bem leve */
+}
+
+/* Tamanho fixo para os ícones do Font Awesome */
+.link-button i {
+    font-size: 18px;
+}
+
+/* Efeito ao passar o mouse ou o dedo nos botões normais */
+.link-button:hover {
+    background-color: #f9f9f9;
+    border-color: #2c2c2c;
+    transform: translateY(-2px); /* Eleva o botão de leve */
+}
+
+/* 🌟 O BOTÃO DE DESTAQUE (WhatsApp / Agendamento) 🌟 */
+.link-button.destaque {
+    background-color: #1a1a1a;  /* Fundo preto elegante para chamar atenção */
+    color: #ffffff;             /* Texto branco para alto contraste */
+    border: 1px solid #1a1a1a;
+    font-weight: 700;
+
+    /* Efeito de pulso discreto para atrair cliques de agendamento */
+    animation: pulsoSuave 2s infinite;
+}
+
+/* Efeito ao passar o mouse no botão de destaque */
+.link-button.destaque:hover {
+    background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
+    transform: translateY(-2px) scale(1.01);
+}
+
+/* Animação de pulso para o botão de agendamento */
+@keyframes pulsoSuave {
+    0% {
+        box-shadow: 0 0 0 0 rgba(26, 26, 26, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(26, 26, 26, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(26, 26, 26, 0);
+    }
+}
+body {
+    background: radial-gradient(circle at center, #ffffff 0%, #fff0f2 50%, #fbe1e4 100%); /* Efeito de luz estourada no centro e rosa suave nas bordas */
+    color: #4a3e3f;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+body {
+    background-image: url('https://unsplash.com'); /* Imagem abstrata premium e fluida */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
+    color: #4a3e3f;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+.link-button {
+    background: #ffffff; /* Fundo branco para contrastar com o novo fundo */
+    /* ... mantenha o restante do código que você já tinha ... */
+}
